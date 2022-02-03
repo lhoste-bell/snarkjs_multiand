@@ -1,0 +1,13 @@
+{
+  "name": "snarkjs_exp",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "./all.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "snarkjs": "^0.4.13"
+  }
+}

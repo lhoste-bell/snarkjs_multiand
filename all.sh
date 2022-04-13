@@ -28,9 +28,9 @@ head verification_key.json
 npx snarkjs plonk prove circuit_final.zkey witness.wtns proof.json public.json
 head proof.json
 head public.json
-#    validate the proof
+#    validate the proof (in javascript)
 npx snarkjs plonk verify verification_key.json public.json proof.json
-#    generate the verifier
+#    generate the verifier (in solidity)
 npx snarkjs zkey export solidityverifier circuit_final.zkey verifier.sol
 head verifier.sol
 #    generate the call data
@@ -38,7 +38,7 @@ npx snarkjs zkey export soliditycalldata public.json proof.json
 
 #    modify input
 npx snarkjs calculatewitness --wasm circuit_js/circuit.wasm --input input_1000.json
-#    validate the proof
+#    validate the proof (in javascript)
 time npx snarkjs plonk prove circuit_final.zkey witness.wtns proof.json public.json
 #    generate the call data
 npx snarkjs zkey export soliditycalldata public.json proof.json

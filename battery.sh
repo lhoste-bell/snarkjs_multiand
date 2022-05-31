@@ -2,6 +2,7 @@
 
 # Download circomlib dependencies
 [ ! -d "circomlib" ] && git clone --depth 1 https://github.com/iden3/circomlib.git --branch v2.0.3
+wget -nc https://hermez.s3-eu-west-1.amazonaws.com/powersOfTau28_hez_final_15.ptau -O pot12_final.ptau || true
 
 # compile circuit
 circom battery.circom --r1cs --wasm --sym

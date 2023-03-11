@@ -20,6 +20,7 @@ head input_1000.json
 npx snarkjs calculatewitness --wasm circuit_js/circuit.wasm --input input_1000.json
 
 #    set up PLONK proving system (requires powers of tau)
+wget -nc https://hermez.s3-eu-west-1.amazonaws.com/powersOfTau28_hez_final_15.ptau -O pot12_final.ptau || true
 npx snarkjs plonk setup circuit.r1cs pot12_final.ptau circuit_final.zkey
 npx snarkjs zkey export verificationkey circuit_final.zkey verification_key.json
 head verification_key.json

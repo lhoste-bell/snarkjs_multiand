@@ -8,6 +8,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "snarkjs": "^0.4.13"
+    "snarkjs": "^0.6.8"
   }
 }

@@ -9,6 +9,6 @@
   "license": "ISC",
   "dependencies": {
     "circomlibjs": "^0.1.2",
-    "snarkjs": "^0.4.16"
+    "snarkjs": "^0.6.8"
   }
 }
